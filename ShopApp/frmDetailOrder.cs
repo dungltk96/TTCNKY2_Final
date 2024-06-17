@@ -56,7 +56,7 @@ namespace ShopApp
             }
 
             // Kiểm tra và định dạng cột Total
-            if (dgvOrderProduct.Columns[e.ColumnIndex].Name == "Total" && e.Value != null)
+            if (dgvOrderProduct.Columns[e.ColumnIndex].Name == "Totals" && e.Value != null)
             {
                 e.Value = Functions.FormatMoney(e.Value.ToString());
                 e.FormattingApplied = true;
